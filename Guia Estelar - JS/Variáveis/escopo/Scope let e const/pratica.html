@@ -1,0 +1,19 @@
+<script>
+  // const e let são locais e só funcionam no escopo onde foi criada
+  
+  // errado - console.log('>existe y antes do bloco? ', y)
+
+    {
+        // ele sabe do y mas n vai funfar - console.log('existe y antes de let?', y)
+        let y = 99
+        console.log('existe y depois de let?', y) // funfo
+    }
+
+  // errado - console.log('>existe y depois do block ', y)
+
+
+
+  // errado - console.log('mas não existe "hosting"', y)
+    let y = 9
+  console.log('Agora sim, existe y no global', y)
+</script>

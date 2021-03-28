@@ -1,0 +1,35 @@
+body {
+    background-color: rgba(233, 233, 233, 0.904)
+}
+
+h1 {
+    text-align: center;
+    color: rgb(245, 245, 245);
+    background-color: #000000;
+    margin-left: 40%;
+    margin-right: 40%;
+    border-radius: 10px;
+}
+
+
+#pp {
+    text-align: center;
+    color: rgb(0, 38, 255);
+}
+
+
+p {
+    color: darkgreen;
+}
+
+ul {
+    color: rgb(255, 255, 0);
+    background-color: red;
+    width: 175px;
+}
+
+footer {
+    align-self: baseline;
+    text-align: center;
+    font-size: 30px;
+}
