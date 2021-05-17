@@ -1,16 +1,20 @@
-let text = "a b c d e f g h i j k l"
+// callback function
+// "chamar de volta" 
 
-    // console.log(text)
+// função que está passando como parâmetro(valor) pra outra função
+function whatIsYourName(name){
+    console.log('antes de executar callback')
 
-let myArray = [
-    1,
-    2,
-    3,
-    4
-]
+    name()
 
-myArray.map((position) => {
-    console.log("algo", position)
-})
+    console.log('depois de executar callback')
+}
 
-console.log(myArray)
+// pode passar qualquer tipo de dado
+whatIsYourName( 
+    () => {
+        console.log('estou em uma callback')
+    }
+)
+
+// chamei uma função no scopo de fora com uma função no parameter e a executei dentro da função "whatIsYourName"

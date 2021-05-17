@@ -7,11 +7,14 @@
     * this keyword
 */
 
-function Person(name) {
-    this.name = name            // fazendo molde com a keyword "this"
+function Person(name, years) {
+    this.name = name         
+    this.years = years   // fazendo molde com a keyword "this"
 }
 
-const Gustavo = new Person("Gustavo")
-const Matheus = new Person("Matheus")
+const Gustavo = new Person("Gustavo", 16)
+const Matheus = new Person("Matheus", 19)
+
+console.log(Person)
 console.log(Gustavo)
 console.log(Matheus)

@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Caracteristicas(sexo, altura, cor, corDoCabelo, cabelo, olhos) {
+            this.sexo = sexo
+            this.altura = altura + 'cm'
+            this.cor = cor
+            this.corDoCabelo = corDoCabelo
+            this.cabelo = cabelo
+            this.olhos = olhos
+        }
+
+        function Crimes(Crime1, Crime2, Crime3, Crime4, Crime5, Crime6, Crime7, Crime8, Crime9) {
+            this.Crime1 = Crime1
+            this.Crime2 = Crime2
+            this.Crime3 = Crime3
+            this.Crime4 = Crime4
+            this.Crime5 = Crime5
+            this.Crime6 = Crime6
+            this.Crime7 = Crime7
+            this.Crime8 = Crime8
+            this.Crime9 = Crime9
+        }
+        
+        const suspeito1 = new Caracteristicas('Masculino', 170, 'pardo', 'roxo', 'longo', 'cinza');
+        console.log(suspeito1)
+        const crimesSuspeito1 = new Crimes('art.' + 155) 
+        console.log(crimesSuspeito1)
+
+        const suspeito2 = new Caracteristicas('Masculino', 195, 'Sulfite', 'loiro', 'curto', 'castanho'); new Crimes('art.' + 157)
+        console.log(suspeito2)
+        const crimesSuspeito2 = new Crimes('art.' + 157)
+        console.log(crimesSuspeito2)
+
+        const suspeito3 = new Caracteristicas('Feminino', 170, 'Marrom', 'preto', 'longo', 'castanho'); new Crimes('art.' + 55)
+        console.log(suspeito3)
+        const crimesSuspeito3 = new Crimes('art.' + 157)
+        console.log(crimesSuspeito3)
+        
+    </script>
+</body>
+</html>

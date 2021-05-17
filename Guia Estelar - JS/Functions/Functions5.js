@@ -1,11 +1,11 @@
 // arrow function 
 
-// pode passar param. e
+// pode passar parameters e
 // geralmente é atribuida por uma "const"
 
 const sayYourName = (name) => {
     name = (name)
-    return console.log("you's", name)
+    return console.log("you're", name)
 }
 
 sayYourName('Gustavo')
