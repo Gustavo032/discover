@@ -6,6 +6,20 @@
         ["Gustavo", 16]
 */
 
+
+// const arrayTest = [
+//     "Leite",
+//     "ovos",
+//     "achocolatado",
+//     "leite e moça >:3",
+//     "granulado"
+// ];
+
+// arrayTest.map((position) => {
+//     // Para cada posição dentro do array é tomada uma ação. No caso "console.log"
+//     console.log(position)
+// })
+
 console.log(["Gustavo", 36]);
 
 console.log([
