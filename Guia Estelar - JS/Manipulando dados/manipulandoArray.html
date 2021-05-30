@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        let competencias = [
+            'HTML5',
+            'CSS3',
+            'JavaScript(ECMAScript)',
+        ]
+
+            // adicionar um item no fim
+        competencias.push('SQL')
+
+            // adicionar um item no começo
+        competencias.unshift('python')
+
+            // remover do fim
+        competencias.pop()
+
+            // remover do começo
+        competencias.shift()
+
+            // pegar somente alguns elementos do Array
+        console.log(competencias.slice(1, 2)) // o primeiro number é contado à partir do 0, já o segundo number é à partir do 1
+    
+            // remover um ou mais de qualquer elemento do Array
+
+        competencias.splice(1, 2)
+        
+            // encontrar a posição de um elemento no Array
+        let index = competencias.indexOf("HTML5")
+        competencias.splice(index, 1)
+
+        console.log(index )
+        console.log(competencias)
+    </script>
+</body>
+</html>
