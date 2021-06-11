@@ -1,0 +1,35 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            // TRY - (TENTAR) --------- VAMOS EXECUTAR UM CODIGO E SE DER ERRO, 
+            // THROW - (DISPARAR/LANÇAR) SERA DISPARADO ATRAVÉS DO THROW 
+            // CATCH - (PEGAR/CAPTURAR) E CAPTURADO NA APLICAÇÃO(CATCH)
+            function sayMyName(name) {
+                if (name === ''){
+                    throw new Error(alert('Nome não pode ser vazio'));
+                    // mesmo do return
+                    // ele para a aplicação
+                console.log('depois do erro dentro da função')
+                }
+
+                console.log(name) 
+            }
+
+            console.log('depois da função') 
+
+            try {
+                sayMyName('')
+            } catch(e){
+                console.log(e)
+            }
+            
+            console.log('depois do try/catch')
+
+        </script>
+    </body>
+</html>

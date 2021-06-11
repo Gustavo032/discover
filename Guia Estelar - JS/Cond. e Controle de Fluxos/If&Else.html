@@ -1,0 +1,30 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            //if...else
+                                                                                // que tesão mexer com isso!
+            let priceStandard = 50
+            let priceExagerado = 3 * priceStandard
+            let priceBarato = priceStandard / 2
+            
+            function avaliarPrice(price) {
+                if(price >= priceExagerado){
+                    return 'muito caro'
+                } else if (price >= priceStandard){
+                    return 'caro'
+                } else if (price >= priceBarato && price < priceStandard){
+                    return 'preço bom'
+                } else if (price < priceBarato) {
+                    return 'muito barato'
+                }
+            }
+
+            console.log(avaliarPrice(500))
+        </script>
+    </body>
+</html>

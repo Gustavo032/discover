@@ -1,0 +1,38 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+       <script>
+           function calculate(number1, operator, number2) {
+               let result = '';
+                switch (operator) {
+                    case '+':
+                        result = number1 + number2
+                        break;
+
+                    case '-':
+                        result = number1 - number2
+                        break;
+
+                    case '/':
+                        result = number1 / number2
+                        break;
+                    
+                    case '*':
+                        result = number1 * number2
+                        break;
+
+                    default:
+                        console.error('não implementado')
+                        break;
+                }   
+                return result
+           }
+           console.log(calculate(10, '**', 2))
+            
+       </script> 
+    </body>
+</html>
