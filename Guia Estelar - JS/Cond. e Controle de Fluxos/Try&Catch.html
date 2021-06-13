@@ -7,24 +7,25 @@
     <body>
         <script>
             // TRY - (TENTAR) --------- VAMOS EXECUTAR UM CODIGO E SE DER ERRO, 
-            // THROW - (DISPARAR/LANÇAR) SERA DISPARADO ATRAVÉS DO THROW 
-            // CATCH - (PEGAR/CAPTURAR) E CAPTURADO NA APLICAÇÃO(CATCH)
+            // THROW - (DISPARAR/LANÇAR) ------ SERA DISPARADO ATRAVÉS DO THROW 
+            // CATCH - (PEGAR/CAPTURAR) ----------- E CAPTURADO NA APLICAÇÃO PELO CATCH
             function sayMyName(name) {
                 if (name === ''){
                     throw new Error(alert('Nome não pode ser vazio'));
-                    // mesmo do return
-                    // ele para a aplicação
-                console.log('depois do erro dentro da função')
-                }
+                    // mesmo do return - eu acho
+                    // ele para com a aplicação
+
+                    console.log('depois do erro dentro da condicional')
+                }   
 
                 console.log(name) 
             }
 
             console.log('depois da função') 
 
-            try {
+            try { // try vai rodar algo e irá trazer o throw para o catch
                 sayMyName('')
-            } catch(e){
+            } catch(e){ //catch vai receber o conteudo (e) e fazer aquilo que vc ordenar com o conteudo(e)
                 console.log(e)
             }
             
