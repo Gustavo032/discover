@@ -1,0 +1,34 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            // for ... of (for = interação)
+                // pega cada elemento de um dado e separa na variavel
+            // cria loop através de alguma prévia variavel(qualquer datatype)
+
+            let me = 'Gustavo'
+            let brothers = ['Matheus', 'Alex', 'Dhea']
+
+            // for (let char of me) {
+            //     let i = char.toUpperCase()
+            //     console.log(i)
+            // }
+
+            brothers.unshift(me)
+
+            for (let name of brothers) {
+                let surName = ' Ramos'
+
+                let resposta = name + surName
+
+                console.log(resposta.toUpperCase())
+            }
+
+        </script>
+    </body>
+</html>
+
