@@ -1,0 +1,58 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            /* ### Transformar notas escolares 
+            
+            Crie um algoritmo que transforme as notas do sistema númerico para sistema de notas em caracteres tipo A B C
+            
+            * de 90 para cima - A
+            * entre 80 e 89 - B
+            * entre 70 e 79 - C
+            * entre 60 e 69 - D
+            * menor que 60 - F
+
+            */
+
+            function transNote(Nota) {
+
+                let resposta = 'insira um argumento';
+                
+                    let notaA = Nota >= 90
+                    let notaB = Nota >= 80 && Nota <= 89
+                    let notaC = Nota >= 70 && Nota <= 79
+                    let notaD = Nota >= 60 && Nota <= 69 
+                    let notaF = Nota < 60
+                    
+                    
+                    if (notaA) {
+                        resposta = 'A'
+                    
+                    } else if (notaB) {    
+                        resposta = 'B'
+
+                    } else if (notaC) {
+                        resposta = 'C'
+
+                    } else if (notaD) {
+                        resposta = 'D'
+                    
+                    } else if (notaF) {
+                        resposta = 'F'
+
+                    } else {
+                        resposta = console.warn('Argumento Invalido');
+                    }
+
+                return resposta
+            }
+
+            console.log(transNote())
+
+        </script>
+    </body>
+</html>
