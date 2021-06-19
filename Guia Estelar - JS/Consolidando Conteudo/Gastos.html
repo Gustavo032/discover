@@ -1,0 +1,59 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            /*  ### Sistema de gastos familiar
+            
+                Crie um Objeto que possuirá 2 propriedades, ambas do tipo array:
+                    * receitas[]
+                    * despesas[]
+            
+                Agora, crie uma função que irá calcular o total de receitas e despesas e irá mostrar uma mensagem se a familia está com saldo positivo ou negativo, seguido do valor  do saldo
+            
+            */
+
+            let objeto = {
+                receitas: [293.02, 190.3, 270.34],
+                despesas: [200.00, 200.00, 250.00],
+            }
+
+            const array1 = objeto.receitas
+            const array2 = objeto.despesas
+
+            function sum(array) {
+                let total = 0;
+
+                for (let valor of array) {
+                    total += valor
+                }
+
+                return total
+            }
+
+
+            function calc() {
+                const calcReceitas = sum(array1);
+                const calcDespesas = sum(array2);
+
+                const total = calcReceitas - calcDespesas
+                
+                const itsOk = total >= 0
+
+                let balanceText = "Negativo"
+
+                if (itsOk) {
+                    balanceText = "Positivo"
+                }
+
+                console.log(`seu saldo é ${balanceText}: ${total.toFixed(2)}`)
+            }
+
+            calc()
+
+        </script>
+    </body>
+</html>
