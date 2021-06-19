@@ -9,27 +9,27 @@
            function calculate(number1, operator, number2) {
                let result = '';
 
-                switch (operator) { // vai passar o sujeito que vai sofrer as alterações (if(operator))
-                    case '+': // vai passar a condição e o ":" diz oq fazer com ela(if(operator = '+') { result = number1 + number2 })
-                        result = number1 + number2
-                        break; // vai sinalizar que caso essa condição não for correspondida, irá ignorar seu resultado
+                    switch (operator) { // vai passar o sujeito que vai sofrer as alterações (if(operator))
+                        case '+': // vai passar a condição e o ":" diz oq fazer com ela(if(operator = '+') { result = number1 + number2 })
+                            result = number1 + number2
+                            break; // vai sinalizar que caso essa condição não for correspondida, irá ignorar seu resultado
 
-                    case '-': 
-                        result = number1 - number2
-                        break;
+                        case '-': 
+                            result = number1 - number2
+                            break;
 
-                    case '/':
-                        result = number1 / number2
-                        break;
-                    
-                    case '*':
-                        result = number1 * number2
-                        break;
+                        case '/':
+                            result = number1 / number2
+                            break;
+                        
+                        case '*':
+                            result = number1 * number2
+                            break;
 
-                    default: // irá basicamente assumir o papel de ELSE (else { console.error('não implementado')})
-                        console.error('não implementado')
-                        break;
-                }   
+                        default: // irá basicamente assumir o papel de ELSE (else { console.error('não implementado')})
+                            console.error('não implementado')
+                            break;
+                    }   
 
                 return result
            }
