@@ -1,0 +1,35 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            /* ### Celsius em fahrenheit
+
+                Crie uma função que receba uma string em celsius ou fahrenheit e faça a transformação de uma unidade para outra
+                
+                C = (F - 32) * 5/9
+                F = (C * 9/5) + 32
+            
+            */
+
+            function trans(temperatura, formato) {
+                let transformado = 0
+
+                if (formato == "F" || formato == "f") {
+                    transformado = ((temperatura - 32) * 5/9).toFixed(2) + 'C'
+
+                } else if (formato == "C" || formato == "c"){
+                    transformado = ((temperatura * 9/5) + 32).toFixed(2) + 'F'
+                }
+                
+                return transformado
+            }
+
+            console.log(trans(0, 'C'))
+
+        </script>
+    </body>
+</html>
