@@ -23,6 +23,8 @@
 
                 } else if (formato == "C" || formato == "c"){
                     transformado = ((temperatura * 9/5) + 32).toFixed(2) + 'F'
+                }   else {
+                    throw new Error('Grau não registrado')
                 }
                 
                 return transformado
@@ -30,6 +32,13 @@
 
             console.log(trans(0, 'C'))
 
+            try {
+                trans(20, 'C')
+                trans(20, 'E')
+            } catch (error){
+                console.log(error.message)
+            }
+            
         </script>
     </body>
 </html>
