@@ -84,25 +84,26 @@ html lang="en">
 
             countAuthors()
 
-            function booksOfAugustoCury() {
+            function booksOfAuthor(authorName) {
                 let Livros = [];
                 
                 for (let insideObject of booksByCategory) {
                     for (let insideBooks of insideObject.books) {
-                        if (insideBooks.author === "Augusto Cury") {
+                        if (insideBooks.author === authorName) {
                             Livros.push(insideBooks.name)
                         }
                     }
                 }
                 
-                console.log(`Livros do autor: 
-                ${Livros.join(`
-                `)}`)
+                console.log(`Livros do autor ${authorName}: 
+
+${Livros.join(`
+`)}`)
 
 
             }
 
-            booksOfAugustoCury()
+            booksOfAuthor("Augusto Cury")
         </script>
     </body>
 </html>
