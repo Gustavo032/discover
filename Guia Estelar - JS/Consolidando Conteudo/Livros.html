@@ -1,0 +1,108 @@
+html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            /*
+                << Buscando  e contando dados em Arrays >>
+
+                Baseado no Array de Livros por Categoria abaixo, faça os seguintes desafios
+
+                    * Contar o número de categorias e o número de livros em cada categoria
+                    * Contar o número de autores
+                    * mostrar livros do autor Augusto Cury
+                    * Transformar a função acima em uma função que reberá o nome do autor e devolver livros do autor
+            */
+
+            const booksByCategory = [
+                {
+                    category: "Riqueza",
+                    books: [
+                        {
+                            name: "Os Segredos da Mente Milionária",
+                            author: "T. Harv Eker"
+                        },
+                        
+                        {
+                            name: "O Homem Mais Rico da Babilônia",
+                            author: "George S. Clason"
+                        },
+                        
+                        {
+                            name: "Pai Rico, Pai Pobre",
+                            author: "Robert T. Kiyosaki e Sharon L. Lechter"
+                        },
+                    ]
+                },
+
+                {
+                    category: "Inteligencia Emocional",
+                    books: [
+                        {
+                            name: "Você é Insubstituível",
+                            author: "Augusto Cury"
+                        },
+                        
+                        {
+                            name: "Ansiedade - Como Enfrentar o mal do século",
+                            author: "Augusto Cury"
+                        },
+                        
+                        {
+                            name: "Os 7 Habitos das Pessoas Altamente Eficazes",
+                            author: "Stephen R. Covey"
+                        },
+                    ]
+                }
+            ]
+
+            const totalCategories = booksByCategory.length
+
+            console.log("total de categorias:", totalCategories)
+
+            for (let objeto of booksByCategory) {
+                console.log(`o total de livros na categoria ${objeto.category} é:`)
+                console.log(objeto.books.length)
+            }
+
+            function countAuthors() {
+                let authors = [];
+                
+                for (let insideObject of booksByCategory) {
+                    for (let insideBooks of insideObject.books) {
+                        if (authors.indexOf(insideObject.author) == -1) {
+                            authors.push(insideBooks.author)
+                        }
+                    }
+                }
+                
+                console.log('o total de autores é:', authors.length)
+            }
+
+            countAuthors()
+
+            function booksOfAugustoCury() {
+                let Livros = [];
+                
+                for (let insideObject of booksByCategory) {
+                    for (let insideBooks of insideObject.books) {
+                        if (insideBooks.author === "Augusto Cury") {
+                            Livros.push(insideBooks.name)
+                        }
+                    }
+                }
+                
+                console.log(`Livros do autor: 
+                ${Livros.join(`
+                `)}`)
+
+
+            }
+
+            booksOfAugustoCury()
+        </script>
+    </body>
+</html>
