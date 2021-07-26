@@ -1,0 +1,85 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- Button
+
+                - Representa um botão
+                - Usado para enviar formulários
+                - É estilizado pelo user agent
+                
+            Atributos Comuns
+                - type
+                    - submit // FAZ O FORMULÁRIO SER ENVIADO
+                    - reset // LIMPAR O FORMULÁRIO (RESETAR)
+                    - button // ALGUNS NAVEGADORES TAMBÉM ENTENDEM COMO UM SUBMIT
+                
+                - autofocus // Quando entrar na pagina irá procurar um cara com o primeiro autofocus, e então seleciona-lo como se tivesse apertado a tecla TAB
+                
+                - disabled // Desabilita é legal usar com JavaScript quando o usuário ainda não preencheu todos os campos
+                
+                - name 
+                        } irão nós permitir enviar um valor pra algo quando submetermos o formulário
+                - value
+
+                - form // ao ser clicado envia o formulário linkado
+
+         -->
+         <fieldset>
+            <LEGEND>Exemplo 1</LEGEND>
+            <form action="">
+                <input type="text" value="algo">
+                <button type="reset">Enviar</button>
+            </form>
+        </fieldset>
+
+        <fieldset>
+            <LEGEND>Exemplo 2</LEGEND>
+            <form action="">
+                <input type="text">
+                <button type="submit" autofocus>foca em mim :p</button>
+            </form>
+        </fieldset>
+
+        <fieldset>
+            <LEGEND>Exemplo 3</LEGEND>
+            <form id="formAleatorio" action="">
+                <input type="text">
+                <button type="submit" disabled>Enviar</button>
+            </form>
+        </fieldset>
+
+        <fieldset>
+            <LEGEND>Exemplo 4</LEGEND>
+            <form action="">
+                <input type="text">
+                <button type="submit" name="button" value="RECEBA ISSO">Enviar</button>
+                <!-- ao submeter, irá procurar pelo name e enviar o "value" para esse name -->
+            </form>
+        </fieldset>
+
+        <fieldset>
+            <LEGEND>Exemplo 5</LEGEND>
+            <form action="">
+                <input type="text">
+            </form>
+            
+            <button type="submit" form="formAleatorio">Enviar o formulário do Exemplo 3</button>
+        </fieldset>
+
+        <fieldset>
+            <LEGEND>Outra maneira de enviar form</LEGEND>
+            <form action="">
+                <input type="text">
+            </form>
+            
+            <input  type="submit" form="formAleatorio" value="Enviar o Exemplo 3">
+        </fieldset>
+        <label style="text-decoration: underline; font-family: sans-serif;"for="">USAMOS A TAG &lt;button&gt;  POR ELA SER MAIS INTUITIVA (A pronuncia de Button lembra muito "botão")</label>
+
+        
+    </body>
+</html>
