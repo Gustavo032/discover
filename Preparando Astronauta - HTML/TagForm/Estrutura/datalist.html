@@ -1,0 +1,54 @@
+<!-- 
+    # <datalist>
+        - Lista de valores  como sugestão a uma tag <input>
+        - Valores sugestivos e não obrigatórios
+        - Usuários poderão selecionar um dos valores, ou colocar um valor diferente da sugestão.
+        - Estilizado padrão pelo navegador
+    <datalist id = "interesse">
+        <option>Estágio</option>
+        <option>Aprendiz</option>
+        <option>Temporário</option>
+        <option>Efetivo</option>
+        <option>Bico</option>
+    </datalist>
+
+    # list
+        - Recebe como valor o id de um <datalist> residente no mesmo documento.
+            
+    # tipos de input suportados:
+        - text, search, url, tel, email, date, month, week, time, datetime-local, number, range e color
+        * valores no datalist que não são compativeis com o tipo do input, não irão aparecer
+        
+    # tipos de input não suportados
+        - hidden, password, checkbox, radio, file, ou qualquer tipo de button
+
+    # User Agent
+        - Verificar a compatibilidade com o Browser https://caniuse.com
+
+
+
+-->
+
+
+
+<datalist id = "interesse">
+    <option>Estágio</option>
+    <option>Aprendiz</option>
+    <option>Temporário</option>
+    <option>Efetivo</option>
+    <option>Bico</option>
+</datalist>
+
+<input type="text" name="" id="" list="interesse" placeholder="Tipo de Emprego">
+
+<br>
+
+<datalist id = "cores-de-pele">
+    <option>#ffbc7e</option>
+    <option>#cd853f</option>
+    <option>#613912</option>
+    <option>#2b1805</option>
+    <option>#180c01</option>
+</datalist>
+
+<label>Tom de Pele:</label><input type="color" name="" id="" list="cores-de-pele">
