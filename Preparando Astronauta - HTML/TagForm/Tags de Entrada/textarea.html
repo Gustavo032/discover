@@ -1,0 +1,49 @@
+<!-- textarea
+
+    - textos de mais de uma linha
+    - útil para grandes textos
+
+    # Atributos
+    - id
+        - serve para identificar o textarea
+
+    - name
+        - serve pra identificarmos em outro lugar quando submetermos os dados 
+    - rows e cols
+        - serve para definir o tamanho da area 
+        - rows = linhas // cols = colunas
+
+    - minlength e maxlength
+        - tamanho do texto 
+    
+    - wrap
+        // se embrulhando dentro da caixa
+        - hard, soft(padrão), off
+
+    ... outros comuns ao <input>s
+        - autocomplete, autofocus, disabled, placeholder, readonly, form, required
+        
+
+
+-->
+<fieldset>
+    <label for="message">mensagem:</label>
+    <textarea id="message"></textarea>
+</fieldset>
+
+<fieldset>
+    <textarea rows="10" cols="10"></textarea>
+</fieldset>
+
+<fieldset>
+    <textarea maxlength="5" minlength="4"></textarea>
+</fieldset>
+
+<fieldset>
+    <textarea wrap="soft"> opa tudo bom maaaaaaaaaaaaaaaaaaaaaaaano bla bl bla</textarea>
+</fieldset>
+
+<fieldset>
+    <textarea readonly required>caaaaaaaaaaa</textarea>
+</fieldset>
+

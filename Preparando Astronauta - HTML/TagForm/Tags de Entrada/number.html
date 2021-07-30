@@ -1,0 +1,28 @@
+<!-- input number
+
+    - Entrada de números
+
+    # Atributos
+    - min/max
+    - step
+
+-->
+<form action="">
+    <datalist id="emergencyNumbers">
+        <optgroup label="Policia">
+            <option>190</option>
+        </optgroup>
+        <optgroup label="Ambulancia">
+            <option>192</option>
+        </optgroup>
+        <optgroup label="Bombeiros">
+            <option>193</option>
+        </optgroup>
+    </datalist>
+    
+    <label for="requisitado">digite o número de emergência</label>
+    
+    <input type="number" name="requisitado" id="requisitado" min="180" max="200" step="0.0" placeholder="190" required list="emergencyNumbers">
+
+    <button>Ligar</button>
+</form>
