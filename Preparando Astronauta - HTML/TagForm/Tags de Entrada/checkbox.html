@@ -1,0 +1,37 @@
+<!-- input checkbox
+
+    - Caixas que podem ser marcadas
+    - Selecionar um valor pra ser enviado
+    - Se não selecionado, não será enviado nenhum dado
+
+    # Atributos
+    - globais
+    - value
+        * valor que aquele campo contém
+        * se não estiver presente, o padrão é "on"
+    - checked
+        * para deixar o campo marcado por padrão
+
+-->
+
+<label for="checkWpp">Receber Mensagens no Whatsapp</label>
+<input type="checkbox" name="checkWpp" id="checkWpp" checked value="Yes">
+
+<!-- MARCAR MÚLTIPLOS VALORES?
+
+    - Usaremos o atributo 'name' com o mesmo nome para os diversos campos
+-->
+<fieldset>
+    <legend>Choose your interests</legend>
+    <form>
+        <div>
+            <input type="checkbox" value="codeY" name="checkInterests" id="checkInt1">
+            <label for="checkInt1">Coding</label>
+        </div>
+<!-- checkInterests= codeY, musicY -->
+        <div>
+            <input type="checkbox" value="musicY" name="checkInterests" id="checkInt2">
+            <label for="checkInt2">Music</label>
+        </div>    
+    </form>
+</fieldset>
