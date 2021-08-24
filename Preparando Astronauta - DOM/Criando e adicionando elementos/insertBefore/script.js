@@ -13,4 +13,4 @@ const body = document.querySelector('body')
 body.append(div)
 
 // adiciona alguma coisa ANTES
-body.append(div)
+body.prepend(div)
